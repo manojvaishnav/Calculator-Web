@@ -1,9 +1,8 @@
 let string = '';
 let screen = document.querySelector('input')
-let buttons = document.querySelectorAll('.button');
+let buttons = document.querySelectorAll('.btn');
 Array.from(buttons).forEach(button => {
     button.addEventListener('click',(e)=>{
-        // console.log(e.target)
         if(e.target.innerHTML == '='){
             string = eval(string);
             screen.value = string;
